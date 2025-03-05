@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #d9534f;
+  }
+  
+  /* Hero Section */
+  .image_back {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .image_back img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: blur(5px);
+  }
+  
+  .image_back h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  /* About Section */
+  .third {
+    padding: 50px 15px;
+  }
+  
+  .third h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .third p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Team Section */
+  .choose_bg {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .for_box {
+    background: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .for_box:hover {
+    background: #d9534f;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .for_box h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .for_box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .for_box p {
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    font-size: 1.3rem;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+  }
+  
+  .footer .copy {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  .navbar-nav .nav-link.active, 
+.navbar-nav .nav-item .dropdown-item.active {
+  color: #1100ff !important;  /* Change to your preferred highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+
+#login{
+    color: #1100ff !important;  /* Change to your preferred highlight color */
+    border: 1px solid rgb(26, 255, 0);
+    border-radius: 10px;
+}
+#about_back{
+    background-color: #d6d8da;
+}
+#btn_Close{
+    background-color: #d9534f;
+    color: white;
+    border: 3px solid #4fd0d9;
+    text-align: center;
+}
+#home{
+  background: linear-gradient(90deg, rgb(235, 132, 184) 30%, rgb(189, 107, 231) 40%, rgb(126, 218, 236) 100%);
+}
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .quick-links a {
+    transition: all 0.3s ease-in-out;
+    color: white !important; /* Ensuring the default text is white */
+  }
+  
+  .quick-links a:hover {
+    color: #007bff !important; /* Changes text to Bootstrap blue on hover */
+    text-decoration: underline !important; /* Adds underline */
+    transform: scale(1.05); /* Slightly enlarges the text */
+  }
