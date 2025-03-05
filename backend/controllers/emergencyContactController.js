@@ -30,9 +30,21 @@ exports.getContacts = async (req, res) => {
 // Delete Emergency Contact
 exports.deleteContact = async (req, res) => {
     try {
-        await EmergencyContact.findByIdAndDelete(req.params.id);
+        const contact = await EmergencyContact.findById(req.params.id);
+        
+        if (!contact) {
+            return res.status(404).json({ message: 'Contact not found' });
+        }
+
+        // Ensure user is authorized to delete their own contact
+        if (contact.user.toString() !== req.user.id) {
+            return res.status(403).json({ message: 'Unauthorized to delete this contact' });
+        }
+
+        await contact.deleteOne();
         res.status(200).json({ message: 'Contact deleted' });
     } catch (error) {
         res.status(500).json({ message: 'Error deleting contact', error });
     }
 };
+
